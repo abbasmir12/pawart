@@ -37,8 +37,7 @@ yarn-error.*
 # local Codex workspace metadata
 .codex/
 
-# secure server implementation (kept local for now)
-supabase/functions/
+# local Supabase state
 supabase/.temp/
 supabase/config.toml
 

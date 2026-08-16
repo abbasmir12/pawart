@@ -86,7 +86,7 @@ flowchart TD
     F -->|Signed result URL| A
 ```
 
-The Expo app communicates with Supabase only. Google credentials remain in server-side Edge Function secrets and are never bundled into the mobile application.
+The Expo app communicates with Supabase only. The Edge Function calls the official Google Gemini Interactions API directly; Google credentials remain in server-side secrets and are never bundled into the mobile application.
 
 ## Technology
 
