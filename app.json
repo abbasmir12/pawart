@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "PawArt",
+    "slug": "pawart",
+    "scheme": "pawart",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFF8F2"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "art.pawart.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "PawArt uses your camera to capture your dog's portrait.",
+        "NSMicrophoneUsageDescription": "PawArt records a short bark to shape the artwork.",
+        "NSPhotoLibraryUsageDescription": "PawArt lets you choose a dog photo.",
+        "NSPhotoLibraryAddUsageDescription": "PawArt saves your finished masterpiece."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFF8F2"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": ["CAMERA", "RECORD_AUDIO", "READ_MEDIA_IMAGES", "WRITE_EXTERNAL_STORAGE"],
+      "package": "art.pawart.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      ["expo-image-picker", {"photosPermission": "Choose a dog photo to turn into PawArt.", "cameraPermission": "Take a dog photo for PawArt."}],
+      ["expo-audio", {"microphonePermission": "Record a short bark to shape your dog's artwork."}],
+      ["expo-media-library", {"photosPermission": "Save your PawArt masterpiece to your photo library."}]
+    ]
+  }
+}
